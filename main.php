@@ -3,7 +3,7 @@
 if (empty($_SESSION['username_dinein'])) {
     header('location:login');
 }
-
+// y
 include "proses/connect.php";
 $query = mysqli_query($conn, "SELECT * FROM tb_user WHERE username = '$_SESSION[username_dinein]'");
 $hasil = mysqli_fetch_array($query);
